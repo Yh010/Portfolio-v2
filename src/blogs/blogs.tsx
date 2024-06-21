@@ -30,7 +30,9 @@ const blogs: Blog = {
 function Blogs() {
   return (
     <div>
-      <div className="font-sans font-semi-bold text-lg text-center">Blogs</div>
+      <div className="font-sans font-semi-bold text-lg text-center">
+        -----Blogs-----
+      </div>
       <div className="divide-y space-y-4 pt-4">
         {blogs.objects.map((blog, index) => (
           <div className="space-y-2 pt-4" key={index}>

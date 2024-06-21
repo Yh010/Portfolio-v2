@@ -18,7 +18,7 @@ function Achievements() {
   return (
     <div>
       <div className="font-sans font-semi-bold text-lg text-center pt-14">
-        Achievements
+        -----Achievements-----
       </div>
       <div className="divide-y space-y-4 pt-4">
         {achievements.objects.map((achievement, index) => (

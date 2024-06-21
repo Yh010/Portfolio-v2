@@ -42,7 +42,7 @@ function App() {
               </p>
             </div>
             <div className="pt-12">
-              <div className="text-center">Experience</div>
+              <div className="text-center">-----Experience-----</div>
               <div></div>
             </div>
             <Blogs />
