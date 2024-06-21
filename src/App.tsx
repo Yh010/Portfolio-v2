@@ -1,6 +1,8 @@
+import Blogs from "./blogs/blogs";
+
 function App() {
   return (
-    <div className="h-screen">
+    <div className="h-screen bg-slate-50">
       {/* 
       blogs
       projects: columns for full stack, FE and BE Projects
@@ -40,8 +42,9 @@ function App() {
             </div>
             <div className="pt-12">
               <div className="text-center">Experience</div>
-              <div>efger</div>
+              <div></div>
             </div>
+            <Blogs />
           </div>
         </div>
         <div className="h-screen invisible">col3</div>
