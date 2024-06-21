@@ -1,6 +1,10 @@
-export interface Achievements {
+interface AchievementsObject {
     competitionName: string;
-    competitionDescription: string;
+    competitionDescription?: string;
     Rank: string;
     competitionImage?:string
+}
+
+export interface AchievementsArr{
+    objects:AchievementsObject[]
 }

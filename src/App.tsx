@@ -1,3 +1,4 @@
+import Achievements from "./achievements/achievements";
 import Blogs from "./blogs/blogs";
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
               <div></div>
             </div>
             <Blogs />
+            <Achievements />
           </div>
         </div>
         <div className="h-screen invisible">col3</div>
