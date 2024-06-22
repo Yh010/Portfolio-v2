@@ -3,7 +3,7 @@ import Blogs from "./blogs/blogs";
 
 function App() {
   return (
-    <div className="h-screen bg-slate-50">
+    <div className="h-full bg-slate-50">
       {/* 
       blogs
       projects: columns for full stack, FE and BE Projects
@@ -14,7 +14,7 @@ function App() {
        */}
       <div className="columns-1 md:columns-3">
         <div className="h-screen invisible">col1</div>
-        <div className="pt-12 h-screen">
+        <div className="pt-12 h-screen overflow-auto no-scrollbar">
           <div className="flex-col ">
             <div className="flex justify-between">
               <div className="font-sans font-semi-bold text-lg">Yash Hegde</div>
@@ -47,6 +47,7 @@ function App() {
             </div>
             <Blogs />
             <Achievements />
+            <Blogs />
           </div>
         </div>
         <div className="h-screen invisible">col3</div>
