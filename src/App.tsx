@@ -43,7 +43,6 @@ function App() {
               </p>
             </div>
             <div className="pt-12">
-              <div className="text-center">-----Experience-----</div>
               <Experience />
             </div>
             <Blogs />

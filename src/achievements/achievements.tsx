@@ -16,7 +16,7 @@ const achievements: AchievementsArr = {
 };
 function Achievements() {
   return (
-    <div>
+    <div className="pb-12">
       <div className="font-sans font-semi-bold text-lg text-center pt-14">
         -----Achievements-----
       </div>
