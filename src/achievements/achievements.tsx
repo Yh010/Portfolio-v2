@@ -3,14 +3,14 @@ import { AchievementsArr } from "./achievementTypes";
 const achievements: AchievementsArr = {
   objects: [
     {
-      competitionName: "Dr Reddy",
-      competitionDescription: "wrfer",
-      Rank: "213",
+      competitionName: "Dr Reddy Aspire Challenge 2023",
+      competitionDescription: "Among the top 10 National Finalists",
+      Rank: "Among the top 10 National Finalists",
     },
     {
       competitionName: "TATA ELXSI",
-      competitionDescription: "wrfer",
-      Rank: "213",
+      competitionDescription: "Among the top 50 All over India",
+      Rank: "Among the top 50 All over India",
     },
   ],
 };

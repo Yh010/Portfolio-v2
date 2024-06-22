@@ -35,7 +35,7 @@ function Blogs() {
       </div>
       <div className="divide-y space-y-4 pt-4">
         {blogs.objects.map((blog, index) => (
-          <div className="space-y-2 pt-4" key={index}>
+          <div className=" hover:text-blue-600 space-y-2 pt-4" key={index}>
             <a className="after:content-['_↗'] ..." href={blog.blogUrl}>
               {blog.blogName}
             </a>
