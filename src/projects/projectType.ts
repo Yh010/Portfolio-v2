@@ -2,7 +2,7 @@ export enum ProjectType {
     ALL="All",
     FE = "FrontEnd",
     BE = "BackEnd",
-    FULL_STACK = "full stack",
+    FULL_STACK = "Full Stack",
 }
 interface ProjectObject{
     ProjectImage?: HTMLImageElement;
