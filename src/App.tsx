@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import Experience from "./experience/experience";
-import Projects from "./projects/projects";
 
 function App() {
   return (

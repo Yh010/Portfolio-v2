@@ -1,4 +1,5 @@
 import { ProjectsArr, ProjectType } from "./projectType";
+import ProjectTypeSelector from "./projectTypeSelector";
 
 const projects: ProjectsArr = {
   object: [
@@ -11,7 +12,41 @@ const projects: ProjectsArr = {
       githubLink: "https://github.com/Yh010/WordBee",
       projectType: ProjectType.FE,
     },
+    {
+      projectName: "Wordingle",
+      projectDescription:
+        "Welcome to the challenge of decoding a 5-letter word. You've got 6 opportunities to unravel the mystery. ",
+      projectTechStack: ["React", "Javascript"],
+      liveLink: "https://word-bee.vercel.app/",
+      githubLink: "https://github.com/Yh010/WordBee",
+      projectType: ProjectType.BE,
+    },
+    {
+      projectName: "Wordingle",
+      projectDescription:
+        "Welcome to the challenge of decoding a 5-letter word. You've got 6 opportunities to unravel the mystery. ",
+      projectTechStack: ["React", "Javascript"],
+      liveLink: "https://word-bee.vercel.app/",
+      githubLink: "https://github.com/Yh010/WordBee",
+      projectType: ProjectType.FULL_STACK,
+    },
+    {
+      projectName: "Wordingle",
+      projectDescription:
+        "Welcome to the challenge of decoding a 5-letter word. You've got 6 opportunities to unravel the mystery. ",
+      projectTechStack: ["React", "Javascript"],
+      liveLink: "https://word-bee.vercel.app/",
+      githubLink: "https://github.com/Yh010/WordBee",
+      projectType: ProjectType.FE,
+    },
   ],
+};
+
+const filterprojects = (selectedprojectType: ProjectType): ProjectsArr => {
+  const filteredprojects = projects.object.filter(
+    (proj) => proj.projectType === selectedprojectType
+  );
+  return { object: filteredprojects };
 };
 
 function Projects() {
@@ -20,9 +55,11 @@ function Projects() {
       <div className="h-screen invisible"></div>
       <div className="pt-12 h-screen overflow-auto no-scrollbar">
         <div className="flex-col ">
-          <div className="font-sans font-semi-bold text-lg text-center">
+          <div className="font-sans font-semi-bold text-lg text-center ">
             -----Projects-----
           </div>
+          <ProjectTypeSelector />
+
           <div className="divide-y space-y-4 pt-4">
             {projects.object.map((proj, index) => (
               <div className="space-y-2 pt-4" key={index}>

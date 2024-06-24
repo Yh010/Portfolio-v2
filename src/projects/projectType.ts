@@ -1,6 +1,7 @@
 export enum ProjectType {
+    ALL="All",
     FE = "FrontEnd",
-     BE = "BackEnd",
+    BE = "BackEnd",
     FULL_STACK = "full stack",
 }
 interface ProjectObject{
