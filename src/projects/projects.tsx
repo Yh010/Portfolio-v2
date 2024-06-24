@@ -2,6 +2,7 @@ import { ProjectsArr, ProjectType } from "./projectType";
 import ProjectTypeSelector from "./projectTypeSelector";
 import usefilterStore from "../store";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 const projects: ProjectsArr = {
   object: [
     {
@@ -65,7 +66,16 @@ function Projects() {
 
   return (
     <div className="columns-1 md:columns-3">
-      <div className="h-screen invisible"></div>
+      <div className="h-screen">
+        <div className="m-4">
+          <Link
+            className="border-2 rounded-lg border-gray-950 p-2 hover:bg-indigo-300"
+            to="/"
+          >
+            Go Back
+          </Link>
+        </div>
+      </div>
       <div className="pt-12 pb-12 h-screen overflow-auto no-scrollbar">
         <div className="flex-col ">
           <div className="font-sans font-semi-bold text-lg text-center ">
