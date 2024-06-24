@@ -1,13 +1,18 @@
-type FE = "FrontEnd";
-type BE = "BackEnd";
-type FULL_STACK = "full stack";
-
-export interface Project{
+export enum ProjectType {
+    FE = "FrontEnd",
+     BE = "BackEnd",
+    FULL_STACK = "full stack",
+}
+interface ProjectObject{
     ProjectImage?: HTMLImageElement;
     projectName: string;
     projectDescription: string;
     projectTechStack: string[];
     liveLink?: string;
     githubLink: string;
-    projectType: FE | BE | FULL_STACK
+    projectType: ProjectType
+}
+
+export interface ProjectsArr{
+    object: ProjectObject[]
 }

@@ -1,6 +1,6 @@
-import Achievements from "./achievements/achievements";
-import Blogs from "./blogs/blogs";
+import { Link } from "react-router-dom";
 import Experience from "./experience/experience";
+import Projects from "./projects/projects";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       achievements
        */}
       <div className="columns-1 md:columns-3">
-        <div className="h-screen invisible">col1</div>
+        <div className="h-screen invisible"></div>
         <div className="pt-12 h-screen overflow-auto no-scrollbar">
           <div className="flex-col ">
             <div className="flex justify-between">
@@ -28,6 +28,15 @@ function App() {
                 >
                   Resume
                 </a>
+                <Link className="hover:text-blue-600" to="/blogs">
+                  Blogs
+                </Link>
+                <Link className="hover:text-blue-600" to="/achievements">
+                  Achievements
+                </Link>
+                <Link className="hover:text-blue-600" to="/projects">
+                  Projects
+                </Link>
               </div>
             </div>
             <div className="pt-12 font-thin space-y-4 break-after-auto">
@@ -45,11 +54,9 @@ function App() {
             <div className="pt-12">
               <Experience />
             </div>
-            <Blogs />
-            <Achievements />
           </div>
         </div>
-        <div className="h-screen invisible">col3</div>
+        <div className="h-screen  invisible"></div>
       </div>
     </div>
   );

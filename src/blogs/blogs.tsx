@@ -29,7 +29,7 @@ const blogs: Blog = {
 
 function Blogs() {
   return (
-    <div>
+    <div className="pt-12">
       <div className="font-sans font-semi-bold text-lg text-center">
         -----Blogs-----
       </div>
