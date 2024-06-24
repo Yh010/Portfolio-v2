@@ -3,6 +3,7 @@ import ProjectTypeSelector from "./projectTypeSelector";
 import usefilterStore from "../store";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import ContactMe from "../contactMe/ContactMe";
 const projects: ProjectsArr = {
   object: [
     {
@@ -65,7 +66,7 @@ function Projects() {
   }, [currentfilter]);
 
   return (
-    <div className="columns-1 md:columns-3">
+    <div className="columns-1 md:columns-3 bg-slate-50">
       <div className="h-screen">
         <div className="m-4">
           <Link
@@ -74,6 +75,7 @@ function Projects() {
           >
             Go Back
           </Link>
+          <ContactMe />
         </div>
       </div>
       <div className="pt-12 pb-12 h-screen overflow-auto no-scrollbar">

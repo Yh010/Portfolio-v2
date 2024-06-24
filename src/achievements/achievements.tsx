@@ -1,3 +1,4 @@
+import ContactMe from "../contactMe/ContactMe";
 import { AchievementsArr } from "./achievementTypes";
 
 import { Link } from "react-router-dom";
@@ -17,7 +18,7 @@ const achievements: AchievementsArr = {
 };
 function Achievements() {
   return (
-    <div className="columns-1 md:columns-3">
+    <div className="columns-1 md:columns-3 bg-slate-50">
       <div className="h-screen">
         <div className="m-4">
           <Link
@@ -26,6 +27,7 @@ function Achievements() {
           >
             Go Back
           </Link>
+          <ContactMe />
         </div>
       </div>
       <div className="pt-12 pb-12 h-screen overflow-auto no-scrollbar">

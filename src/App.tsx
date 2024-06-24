@@ -4,7 +4,7 @@ import ContactMe from "./contactMe/ContactMe";
 
 function App() {
   return (
-    <div className="h-full bg-slate-50">
+    <div className=" bg-slate-50">
       {/* 
       blogs
       projects: columns for full stack, FE and BE Projects
