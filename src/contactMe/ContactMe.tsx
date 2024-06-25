@@ -1,6 +1,6 @@
 function ContactMe() {
   return (
-    <div className="border-2 rounded-lg transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105  duration-300 m-20 ">
+    <div className="border-2 rounded-lg shadow-2xl fixed transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105  duration-300 m-20 p-4">
       <div>Get in touch with me:</div>
       <div className="space-y-4 mt-4">
         <div>

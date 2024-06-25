@@ -1,25 +1,27 @@
 import { Link } from "react-router-dom";
 import Experience from "./experience/experience";
 import ContactMe from "./contactMe/ContactMe";
+import AchievementModal from "./achievements/AchievementModal";
+import { useState } from "react";
 
 function App() {
+  const [achievementModalActive, setachievementModalActive] =
+    useState<boolean>(false);
+
+  const setmodalstate = () => {
+    setachievementModalActive(!achievementModalActive);
+    console.log(achievementModalActive);
+  };
+
   return (
     <div className=" bg-slate-50">
-      {/* 
-      blogs
-      projects: columns for full stack, FE and BE Projects
-      experience
-      contact me
-      resume
-      achievements
-       */}
       <div className="columns-1 md:columns-3">
         <div className="h-screen ">
           <div className="mt-4">
             <ContactMe />
           </div>
         </div>
-        <div className="pt-12 h-screen overflow-auto no-scrollbar">
+        <div className="pt-12 h-screen  overflow-auto no-scrollbar">
           <div className="flex-col ">
             <div className="flex justify-between">
               <div className="font-sans font-semi-bold text-lg">Yash Hegde</div>
@@ -34,9 +36,10 @@ function App() {
                 <Link className="hover:text-blue-600" to="/blogs">
                   Blogs
                 </Link>
-                <Link className="hover:text-blue-600" to="/achievements">
+                <button className="hover:text-blue-600" onClick={setmodalstate}>
                   Achievements
-                </Link>
+                </button>
+
                 <Link className="hover:text-blue-600" to="/projects">
                   Projects
                 </Link>
@@ -59,7 +62,11 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="h-screen  invisible"></div>
+        <div className="h-screen">
+          <div className="mt-6">
+            {achievementModalActive && <AchievementModal />}
+          </div>
+        </div>
       </div>
     </div>
   );
