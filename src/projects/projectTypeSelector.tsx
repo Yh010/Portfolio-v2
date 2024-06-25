@@ -15,7 +15,9 @@ export default function ProjectTypeSelector() {
 
       <div className="border-2 rounded-lg border-gray-950 flex justify-evenly p-2 mt-4">
         <button
-          className="border-2 rounded-lg border-gray-950 p-2 hover:bg-indigo-300"
+          className={`border-2 rounded-lg border-gray-950 p-2 hover:bg-indigo-300 ${
+            currentfilter === ProjectType.ALL ? "bg-indigo-300" : ""
+          }`}
           onClick={() => {
             setfilter(ProjectType.ALL);
           }}
@@ -23,7 +25,9 @@ export default function ProjectTypeSelector() {
           All
         </button>
         <button
-          className="border-2 rounded-lg border-gray-950 p-2 hover:bg-indigo-300"
+          className={`border-2 rounded-lg border-gray-950 p-2 hover:bg-indigo-300 ${
+            currentfilter === ProjectType.FE ? "bg-indigo-300" : ""
+          }`}
           onClick={() => {
             setfilter(ProjectType.FE);
           }}
@@ -31,7 +35,9 @@ export default function ProjectTypeSelector() {
           FE
         </button>
         <button
-          className="border-2 rounded-lg border-gray-950 p-2 hover:bg-indigo-300"
+          className={`border-2 rounded-lg border-gray-950 p-2 hover:bg-indigo-300 ${
+            currentfilter === ProjectType.BE ? "bg-indigo-300" : ""
+          }`}
           onClick={() => {
             setfilter(ProjectType.BE);
           }}
@@ -39,7 +45,9 @@ export default function ProjectTypeSelector() {
           BE
         </button>
         <button
-          className="border-2 rounded-lg border-gray-950 p-2 hover:bg-indigo-300"
+          className={`border-2 rounded-lg border-gray-950 p-2 hover:bg-indigo-300 ${
+            currentfilter === ProjectType.FULL_STACK ? "bg-indigo-300" : ""
+          }`}
           onClick={() => {
             setfilter(ProjectType.FULL_STACK);
           }}
