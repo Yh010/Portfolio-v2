@@ -1,6 +1,6 @@
 function ContactMe() {
   return (
-    <div className="flex justify-between items-center space-x-4 mb-14">
+    <div className="flex justify-between items-center space-x-4 mb-14 overflow-auto p-4">
       <div className="flex">
         <a
           className=" flex hover:text-blue-600 after:content-['_↗'] ..."

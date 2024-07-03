@@ -3,44 +3,93 @@ import ProjectTypeSelector from "./projectTypeSelector";
 import usefilterStore from "../store";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import ContactMe from "../contactMe/ContactMe";
 const projects: ProjectsArr = {
   object: [
     {
       projectName: "Wordingle",
       projectDescription:
         "Welcome to the challenge of decoding a 5-letter word. You've got 6 opportunities to unravel the mystery. ",
-      projectTechStack: ["React", "Javascript"],
+      projectTechStack: ["React", "Javascript", "Tailwind css"],
       liveLink: "https://word-bee.vercel.app/",
       githubLink: "https://github.com/Yh010/WordBee",
       projectType: ProjectType.FE,
     },
     {
-      projectName: "Wordingle",
+      projectName: "BlogApp ",
       projectDescription:
-        "Welcome to the challenge of decoding a 5-letter word. You've got 6 opportunities to unravel the mystery. ",
-      projectTechStack: ["React", "Javascript"],
-      liveLink: "https://word-bee.vercel.app/",
-      githubLink: "https://github.com/Yh010/WordBee",
-      projectType: ProjectType.BE,
-    },
-    {
-      projectName: "Wordingle",
-      projectDescription:
-        "Welcome to the challenge of decoding a 5-letter word. You've got 6 opportunities to unravel the mystery. ",
-      projectTechStack: ["React", "Javascript"],
-      liveLink: "https://word-bee.vercel.app/",
-      githubLink: "https://github.com/Yh010/WordBee",
+        "A medium-like app where users can signup,and read/post blogs",
+      projectTechStack: [
+        "React for Frontend",
+        "Hono+Cloudflare workers for Backend",
+        "Zod for Type validation in Frontend and Backend",
+        "Typescript",
+        "Prisma ORM with connection pooling",
+        "Postgres",
+        "JWT for authentication",
+        "Draft js for Rich text editor (coming soon)",
+        "Tailwind css",
+      ],
+      liveLink: "https://blog-app-yddm.vercel.app/",
+      githubLink: "https://github.com/Yh010/BlogApp",
       projectType: ProjectType.FULL_STACK,
     },
     {
-      projectName: "Wordingle",
+      projectName: "SugarIt Website",
       projectDescription:
         "Welcome to the challenge of decoding a 5-letter word. You've got 6 opportunities to unravel the mystery. ",
-      projectTechStack: ["React", "Javascript"],
-      liveLink: "https://word-bee.vercel.app/",
-      githubLink: "https://github.com/Yh010/WordBee",
+      projectTechStack: [
+        "React",
+        "Javascript",
+        "Redux",
+        "Material-Tailwind css",
+      ],
+      liveLink: "https://sugarit.vercel.app/",
+      githubLink: "https://github.com/Yh010/Sugarit",
       projectType: ProjectType.FE,
+    },
+    {
+      projectName: "Backend for Chess.com",
+      projectDescription:
+        "Welcome to the challenge of decoding a 5-letter word. You've got 6 opportunities to unravel the mystery. ",
+      projectTechStack: [
+        "Typescript",
+        "Websockets",
+        "Chess.js library for validation of moves",
+      ],
+      githubLink: "https://github.com/Yh010/Chess.com/tree/main/backend",
+      projectType: ProjectType.BE,
+    },
+    {
+      projectName: "A-Better-Google-Photos (coming soon)",
+      projectDescription:
+        "Welcome to the challenge of decoding a 5-letter word. You've got 6 opportunities to unravel the mystery. ",
+      projectTechStack: [
+        "React",
+        "Typescript",
+        "Tailwind",
+        "AWS S3",
+        "AWS Buckets",
+        "MongoDB",
+        "Face-api js",
+      ],
+      githubLink: "https://github.com/Yh010/Chess.com/tree/main/backend",
+      projectType: ProjectType.FULL_STACK,
+    },
+    {
+      projectName: "AWS client using NodeJs",
+      projectDescription:
+        "Welcome to the challenge of decoding a 5-letter word. You've got 6 opportunities to unravel the mystery. ",
+      projectTechStack: ["NodeJs", "Javascript", "AWS Buckets"],
+      githubLink: "https://github.com/Yh010/AWS-Client-nodejs",
+      projectType: ProjectType.BE,
+    },
+    {
+      projectName: "YouTube Backend (Pub Sub architecture using Redis)",
+      projectDescription:
+        "Welcome to the challenge of decoding a 5-letter word. You've got 6 opportunities to unravel the mystery. ",
+      projectTechStack: ["Redis", "Typescript"],
+      githubLink: "https://github.com/Yh010/Youtube",
+      projectType: ProjectType.BE,
     },
   ],
 };
@@ -93,13 +142,13 @@ function Projects() {
                     <div>{proj.projectDescription}</div>
                   </div>
                   <div className="flex justify-between font-thin">
-                    <div> live link: {proj.liveLink}</div>
+                    {proj.liveLink && <div> live link: {proj.liveLink}</div>}
                   </div>
                   <div className="flex justify-between font-thin">
                     <div>github link : {proj.githubLink}</div>
                   </div>
-                  <div className="flex">
-                    Tech stack : {"   "}
+                  <div className="flex space-x-4">
+                    <div>Tech stack: </div>
                     {proj.projectTechStack.map((tech, index) => (
                       <div key={index}>
                         <div className="font-thin">{tech}, </div>
