@@ -1,13 +1,18 @@
 import { Link } from "react-router-dom";
 import Experience from "./experience/experience";
 import ContactMe from "./contactMe/ContactMe";
+import FallingBalls from "./Loader/FallingBalls";
 
 function App() {
   return (
     <div className=" bg-slate-50  min-h-screen flex justify-center items-center">
       <div className="w-1/2">
         <div className="pt-8 h-screen  overflow-auto no-scrollbar">
+          <div className="flex justify-center items-center">
+            <FallingBalls />
+          </div>
           <ContactMe />
+
           <div className="flex-col ">
             <div className="flex justify-between">
               <div className="font-sans font-semi-bold text-lg">Yash Hegde</div>
@@ -43,7 +48,7 @@ function App() {
                 Redis,Hono,tRPC, web sockets and all that jazz...
               </p>
             </div>
-            <div className="pt-12">
+            <div className="pt-12 mb-20">
               <Experience />
             </div>
           </div>

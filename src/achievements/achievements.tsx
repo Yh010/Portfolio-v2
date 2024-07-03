@@ -1,4 +1,3 @@
-import ContactMe from "../contactMe/ContactMe";
 import { AchievementsArr } from "./achievementTypes";
 
 import { Link } from "react-router-dom";
@@ -23,12 +22,34 @@ function Achievements() {
         <div className="pt-12 pb-12 h-screen overflow-auto no-scrollbar">
           <div className="flex-col">
             <div className="m-4">
-              <Link
-                className="border-2 rounded-lg border-gray-950 p-2 hover:bg-indigo-300"
-                to="/"
-              >
-                Go Back
-              </Link>
+              <div className="flex justify-between">
+                <Link
+                  className="border-2 rounded-lg border-gray-950 p-2 hover:bg-indigo-300"
+                  to="/"
+                >
+                  Go Back
+                </Link>
+                <div className="flex space-x-4 font-thin">
+                  <a
+                    className="hover:text-blue-600 after:content-['_↗'] ..."
+                    href="https://drive.google.com/file/d/1mLEgEQslrW-JjZPKWW7ieLjqcCu2eF7B/view?usp=sharing"
+                    target="_blank"
+                  >
+                    Resume
+                  </a>
+                  <Link className="hover:text-blue-600" to="/blogs">
+                    Blogs
+                  </Link>
+
+                  <Link className="hover:text-blue-600" to="/achievements">
+                    Achievements
+                  </Link>
+
+                  <Link className="hover:text-blue-600" to="/projects">
+                    Projects
+                  </Link>
+                </div>
+              </div>
             </div>
             <div className="font-sans font-semi-bold text-lg text-center pt-14">
               -----Achievements-----
