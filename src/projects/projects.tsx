@@ -182,14 +182,15 @@ function Projects() {
                   </div>
                   <div className="flex justify-between font-thin">
                     {proj.liveLink && (
-                      <div className="hover:text-blue-600 underline ">
-                        Live link: {proj.liveLink}
+                      <div className="hover:text-blue-600 underline">
+                        Live link: <a href={proj.liveLink}>{proj.liveLink}</a>
                       </div>
                     )}
                   </div>
                   <div className="flex justify-between font-thin">
                     <div className="hover:text-blue-600 underline ">
-                      Github link : {proj.githubLink}
+                      Github link :{" "}
+                      <a href={proj.githubLink}>{proj.githubLink}</a>
                     </div>
                   </div>
                   <div className="flex space-x-4">
