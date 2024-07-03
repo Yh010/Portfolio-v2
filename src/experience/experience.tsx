@@ -69,7 +69,10 @@ function Experience() {
             </div>
             {exp.projects.map((project, index) => (
               <div key={index}>
-                <div className="font-thin">Tech stack: {project.techstack}</div>
+                <div className="font-thin flex mt-2 mb-2">
+                  <u className="underline decoration-wavy">Tech stack:</u>{" "}
+                  <div className="font-normal">{project.techstack}</div>
+                </div>
                 <div className="font-thin">{project.description}</div>
               </div>
             ))}

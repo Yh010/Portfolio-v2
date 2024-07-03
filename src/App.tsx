@@ -34,14 +34,13 @@ function App() {
             </div>
             <div className="pt-12 font-thin space-y-4 break-after-auto">
               <p>
-                I primarily work on Full Stack web-apps, with my foundations
-                being Nextjs , React {"(in both typescript and javascript)"} ,
-                Prisma ORM, postgres, mongo, Docker , Kubernetes
+                I am a <u>curious software developer</u> who likes to develop
+                <u> full stack web apps</u> using Nextjs, React ,Typescript,node
+                js ,express,prisma with postgres and mongo
               </p>
               <p>
-                I occasionally like to develop apps, such as a clipboard manager
-                or a Hacker News client. Before I got into machine learning, I
-                published several popular JavaScript libraries.
+                <u>Currently exploring advanced topics </u> like
+                Redis,Hono,tRPC, web sockets and all that jazz...
               </p>
             </div>
             <div className="pt-12">

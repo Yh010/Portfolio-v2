@@ -160,10 +160,16 @@ function Projects() {
                     <div>{proj.projectDescription}</div>
                   </div>
                   <div className="flex justify-between font-thin">
-                    {proj.liveLink && <div> live link: {proj.liveLink}</div>}
+                    {proj.liveLink && (
+                      <div className="hover:text-blue-600">
+                        Live link: {proj.liveLink}
+                      </div>
+                    )}
                   </div>
                   <div className="flex justify-between font-thin">
-                    <div>github link : {proj.githubLink}</div>
+                    <div className="hover:text-blue-600">
+                      Github link : {proj.githubLink}
+                    </div>
                   </div>
                   <div className="flex space-x-4">
                     <div>Tech stack: </div>
