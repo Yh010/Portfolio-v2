@@ -66,51 +66,50 @@ function Projects() {
   }, [currentfilter]);
 
   return (
-    <div className="columns-1 md:columns-3 bg-slate-50">
-      <div className="h-screen">
-        <div className="m-4">
-          <Link
-            className="border-2 rounded-lg border-gray-950 p-2 hover:bg-indigo-300"
-            to="/"
-          >
-            Go Back
-          </Link>
-          <ContactMe />
-        </div>
-      </div>
-      <div className="pt-12 pb-12 h-screen overflow-auto no-scrollbar">
-        <div className="flex-col ">
-          <div className="font-sans font-semi-bold text-lg text-center ">
-            -----Projects-----
-          </div>
-          <ProjectTypeSelector />
+    <div className="min-h-screen flex justify-center items-center bg-slate-50">
+      <div className="w-1/2">
+        <div className="pt-12 pb-12 h-screen overflow-auto no-scrollbar">
+          <div className="flex-col ">
+            <div className="m-4">
+              <Link
+                className="border-2 rounded-lg border-gray-950 p-2 hover:bg-indigo-300"
+                to="/"
+              >
+                Go Back
+              </Link>
+            </div>
+            <div className="font-sans font-semi-bold text-lg text-center ">
+              -----Projects-----
+            </div>
+            <ProjectTypeSelector />
 
-          <div className="divide-y space-y-4 pt-4">
-            {filteredprojects.object.map((proj, index) => (
-              <div className="space-y-2 pt-4" key={index}>
-                <div className="flex justify-between">
-                  <div>{proj.projectName}</div>
+            <div className="divide-y space-y-4 pt-4">
+              {filteredprojects.object.map((proj, index) => (
+                <div className="space-y-2 pt-4" key={index}>
+                  <div className="flex justify-between">
+                    <div>{proj.projectName}</div>
+                  </div>
+                  <div className="flex justify-between font-thin">
+                    <div>{proj.projectDescription}</div>
+                  </div>
+                  <div className="flex justify-between font-thin">
+                    <div> live link: {proj.liveLink}</div>
+                  </div>
+                  <div className="flex justify-between font-thin">
+                    <div>github link : {proj.githubLink}</div>
+                  </div>
+                  <div className="flex">
+                    Tech stack : {"   "}
+                    {proj.projectTechStack.map((tech, index) => (
+                      <div key={index}>
+                        <div className="font-thin">{tech}, </div>
+                      </div>
+                    ))}
+                  </div>
+                  <div>Project type: {proj.projectType}</div>
                 </div>
-                <div className="flex justify-between font-thin">
-                  <div>{proj.projectDescription}</div>
-                </div>
-                <div className="flex justify-between font-thin">
-                  <div> live link: {proj.liveLink}</div>
-                </div>
-                <div className="flex justify-between font-thin">
-                  <div>github link : {proj.githubLink}</div>
-                </div>
-                <div className="flex">
-                  Tech stack : {"   "}
-                  {proj.projectTechStack.map((tech, index) => (
-                    <div key={index}>
-                      <div className="font-thin">{tech}, </div>
-                    </div>
-                  ))}
-                </div>
-                <div>Project type: {proj.projectType}</div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
