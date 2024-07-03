@@ -55,6 +55,7 @@ const projects: ProjectsArr = {
         "Typescript",
         "Websockets",
         "Chess.js library for validation of moves",
+        "express",
       ],
       githubLink: "https://github.com/Yh010/Chess.com/tree/main/backend",
       projectType: ProjectType.BE,
@@ -71,6 +72,7 @@ const projects: ProjectsArr = {
         "AWS Buckets",
         "MongoDB",
         "Face-api js",
+        "express",
       ],
       githubLink: "https://github.com/Yh010/Chess.com/tree/main/backend",
       projectType: ProjectType.FULL_STACK,
@@ -79,7 +81,7 @@ const projects: ProjectsArr = {
       projectName: "AWS client using NodeJs",
       projectDescription:
         "Welcome to the challenge of decoding a 5-letter word. You've got 6 opportunities to unravel the mystery. ",
-      projectTechStack: ["NodeJs", "Javascript", "AWS Buckets"],
+      projectTechStack: ["NodeJs", "Javascript", "AWS Buckets", "express"],
       githubLink: "https://github.com/Yh010/AWS-Client-nodejs",
       projectType: ProjectType.BE,
     },
@@ -87,8 +89,24 @@ const projects: ProjectsArr = {
       projectName: "YouTube Backend (Pub Sub architecture using Redis)",
       projectDescription:
         "Welcome to the challenge of decoding a 5-letter word. You've got 6 opportunities to unravel the mystery. ",
-      projectTechStack: ["Redis", "Typescript"],
+      projectTechStack: ["Redis", "Typescript", "express"],
       githubLink: "https://github.com/Yh010/Youtube",
+      projectType: ProjectType.BE,
+    },
+    {
+      projectName: "RateLimiting-and-DDoS Implementation",
+      projectDescription:
+        "Welcome to the challenge of decoding a 5-letter word. You've got 6 opportunities to unravel the mystery. ",
+      projectTechStack: ["Typescript", "express"],
+      githubLink: "https://github.com/Yh010/RateLimiting-and-DDoS",
+      projectType: ProjectType.BE,
+    },
+    {
+      projectName: "tRPC basic implementation",
+      projectDescription:
+        "Welcome to the challenge of decoding a 5-letter word. You've got 6 opportunities to unravel the mystery. ",
+      projectTechStack: ["trpc", "Typescript", "express"],
+      githubLink: "https://github.com/Yh010/tRPC-Practice",
       projectType: ProjectType.BE,
     },
   ],
