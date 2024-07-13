@@ -45,7 +45,7 @@ function Blogs() {
                 <div className="flex space-x-4 font-thin">
                   <a
                     className="hover:text-blue-600 after:content-['_↗'] ..."
-                    href="https://drive.google.com/file/d/1mLEgEQslrW-JjZPKWW7ieLjqcCu2eF7B/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1LXjhP4oOwQd_XlOIVfhT3_S61Yv104CY/view?usp=drive_link"
                     target="_blank"
                   >
                     Resume
